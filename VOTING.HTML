@@ -1,0 +1,22 @@
+<html>
+<body>
+<CENTER>
+<br>
+<br>
+<H4><U><B><font color="blue">VOTE ELIGIBLITY CRITERIA</font></B></U></H4>
+<b>Age: <input type="number" id="age" value="18"></b><br>
+<br>
+<button onclick="checkAge()">Check Age</button>
+<p id="vote"></p>
+
+<script>
+function checkAge() {
+  var age = document.getElementById("age").value;
+  var voteable = (age < 18) ? "Too young":"Old enough";
+  document.getElementById("vote").innerHTML = voteable + " to vote.";
+}
+</script>
+</CENTER>
+</body>
+</html>
+
